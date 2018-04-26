@@ -15,6 +15,8 @@ The implementation is pretty dirty, I simply create a fake window/jsdom which is
 2. Download this repository and open a Command Prompt on the directory (on windows), write "node gameserver.js" and press enter.
 3. Play the PlayCanvas Client I made as an example for this: http://launch.playcanvas.com/606346?debug=true
 
+BE SURE TO OPEN THE CLIENT WITHOUT HTTPS, as this is a local test the server doesn't have SSL implemented and trying to connect from https will result in an unsecure operation error.
+
 You should see a ball bouncing against a ground.
 
 All the physics run on the server side, the client is just displaying the information.
