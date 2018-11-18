@@ -4,8 +4,9 @@ GameServer.prototype = this;
 // include libs
 var util = require("util");
 var fs = require("fs");
-var jsdom = require("jsdom").jsdom;
-var window = jsdom().defaultView;
+var jsdom = require("jsdom").JSDOM;
+var DOM = new jsdom();
+var window = DOM.window;
 var canvasMockify = require("canvas-mock");
 var pc = require("playcanvas");
 var WebSocketServer = require("websocket").server;
