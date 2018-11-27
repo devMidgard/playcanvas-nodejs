@@ -8,7 +8,7 @@ A "headless" implementation of the PlayCanvas Game Engine for use in nodejs appl
 - "jsdom" lib. (https://www.npmjs.com/package/jsdom)
 - "canvas-mock" lib. (https://www.npmjs.com/package/canvas-mock)
 
-The implementation is pretty dirty, I simply create a fake window/jsdom which is what PlayCanvas requires to run. This achieves the game engine running alongside nodejs in a "graphics-less" environment.
+The implementation is pretty dirty, I simply create a fake window/jsdom, and nullify all WebGL required calls which is what PlayCanvas requires to run. This achieves the game engine running alongside nodejs in a "graphics-less" environment.
 
 # how to run
 1. Ensure you have NODEJS installed on your computer.
